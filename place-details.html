@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover detailed information about this incredible destination in India. Plan your visit with travel tips, nearby attractions, and booking options.">
+    <meta name="keywords" content="India tourism, travel guide, destination details, travel tips, book trip">
+    <title>Destination Details - Explore India</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-compass brand-icon"></i>
+                <span>Explore India</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="places.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-light ms-3 dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="detail-hero" style="background: url('https://images.pexels.com/photos/5458388/pexels-photo-5458388.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="detail-hero-content">
+                <h1 class="detail-title">Loading...</h1>
+                <div class="detail-meta">
+                    <div class="detail-meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Loading...</span>
+                    </div>
+                    <div class="detail-meta-item">
+                        <i class="fas fa-star"></i>
+                        <span>Loading...</span>
+                    </div>
+                    <div class="detail-meta-item">
+                        <i class="fas fa-tag"></i>
+                        <span>Loading...</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="#" class="btn btn-primary btn-lg booking-btn">Book This Trip</a>
+                    <a href="places.html" class="btn btn-outline-light btn-lg ms-2">View All Destinations</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column - Main Info -->
+                <div class="col-lg-8">
+                    <!-- Image Gallery -->
+                    <div class="detail-info-card mb-4">
+                        <h4><i class="fas fa-images"></i> Photo Gallery</h4>
+                        <div class="detail-images">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="gallery-item">
+                                        <img src="https://images.pexels.com/photos/5458388/pexels-photo-5458388.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Destination Image" class="img-fluid rounded">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="gallery-item">
+                                        <img src="https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Destination Image" class="img-fluid rounded">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="gallery-item">
+                                        <img src="https://images.pexels.com/photos/2161467/pexels-photo-2161467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Destination Image" class="img-fluid rounded">
+                                        <div class="gallery-overlay">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- History -->
+                    <div class="detail-info-card detail-history mb-4">
+                        <h4><i class="fas fa-book"></i> History & Significance</h4>
+                        <p>Loading destination history...</p>
+                    </div>
+
+                    <!-- Travel Tips -->
+                    <div class="detail-info-card mb-4">
+                        <h4><i class="fas fa-lightbulb"></i> Travel Tips</h4>
+                        <ul class="list-unstyled travel-tips" data-info="travelTips">
+                            <li>Book tickets online to avoid queues</li>
+                            <li>Visit early morning for best experience</li>
+                            <li>Carry water and wear comfortable shoes</li>
+                            <li>Hire a certified guide for rich insights</li>
+                        </ul>
+                    </div>
+
+                    <!-- Nearby Attractions -->
+                    <div class="detail-info-card">
+                        <h4><i class="fas fa-map-marked-alt"></i> Nearby Attractions</h4>
+                        <ul class="list-unstyled nearby-attractions" data-info="nearbyAttractions">
+                            <li>Loading nearby attractions...</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column - Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Key Information -->
+                    <div class="detail-info-card mb-4">
+                        <h4><i class="fas fa-info-circle"></i> Key Information</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <strong>Best Time to Visit</strong>
+                                <span data-info="bestTime">Loading...</span>
+                            </li>
+                            <li>
+                                <strong>Opening Hours</strong>
+                                <span data-info="openingHours">Loading...</span>
+                            </li>
+                            <li>
+                                <strong>Entry Fee</strong>
+                                <span data-info="entryFee">Loading...</span>
+                            </li>
+                            <li>
+                                <strong>Location</strong>
+                                <span data-info="location">Loading...</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Booking Card -->
+                    <div class="detail-info-card mb-4 text-center">
+                        <h4><i class="fas fa-ticket-alt"></i> Ready to Visit?</h4>
+                        <p class="text-muted mb-3">Book your trip now and create unforgettable memories</p>
+                        <a href="#" class="btn btn-primary btn-lg w-100 booking-btn">Book This Trip</a>
+                        <a href="contact.html" class="btn btn-outline-primary w-100 mt-2">Have Questions?</a>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="detail-info-card">
+                        <h4><i class="fas fa-map"></i> Location Map</h4>
+                        <div class="map-container mt-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.891265766847!2d78.03956781504528!3d27.175144982609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2a9bf6df4ea16a!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <i class="fas fa-compass"></i>
+                            <span>Explore India</span>
+                        </a>
+                        <p class="footer-description">Your trusted partner for discovering incredible destinations across India.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="places.html">Destinations</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Popular Destinations</h5>
+                    <ul class="footer-links">
+                        <li><a href="place-details.html?id=taj-mahal">Taj Mahal</a></li>
+                        <li><a href="place-details.html?id=goa">Goa</a></li>
+                        <li><a href="place-details.html?id=kerala-backwaters">Kerala Backwaters</a></li>
+                        <li><a href="place-details.html?id=golden-temple">Golden Temple</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tourism Street, New Delhi</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@exploreindia.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Explore India. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close"><i class="fas fa-times"></i></span>
+        <a class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></a>
+        <div class="lightbox-content">
+            <img src="" alt="Full size image">
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

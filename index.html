@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore India - Your gateway to incredible destinations. Discover historical monuments, serene beaches, majestic hill stations, and spiritual temples across India.">
+    <meta name="keywords" content="India tourism, travel India, Taj Mahal, Golden Temple, Goa, Kerala, Jaipur, Indian destinations, tourism management">
+    <meta name="author" content="Explore India">
+    <title>Explore India - Tourism Management Website</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-compass brand-icon"></i>
+                <span>Explore India</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="places.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-light ms-3 dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover the Beauty of India</h1>
+            <p class="hero-subtitle">From majestic monuments to serene beaches, explore incredible destinations across the subcontinent</p>
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn btn-primary btn-lg hero-btn">Explore Now</a>
+                <a href="booking.html" class="btn btn-outline-light btn-lg hero-btn">Book Trip</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#destinations" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Search Section -->
+        <section class="search-section py-4">
+            <div class="container">
+                <div class="search-box">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-0">
+                                    <i class="fas fa-search text-primary"></i>
+                                </span>
+                                <input type="text" class="form-control border-0" id="searchInput" placeholder="Search destinations...">
+                                <button class="btn btn-primary px-4" type="button">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Filter -->
+        <section class="filter-section py-4 bg-light">
+            <div class="container">
+                <div class="filter-buttons d-flex flex-wrap justify-content-center gap-2">
+                    <button class="btn btn-filter active" data-filter="all">
+                        <i class="fas fa-th-large me-2"></i>All
+                    </button>
+                    <button class="btn btn-filter" data-filter="historical">
+                        <i class="fas fa-landmark me-2"></i>Historical
+                    </button>
+                    <button class="btn btn-filter" data-filter="beach">
+                        <i class="fas fa-umbrella-beach me-2"></i>Beach
+                    </button>
+                    <button class="btn btn-filter" data-filter="hill-station">
+                        <i class="fas fa-mountain me-2"></i>Hill Station
+                    </button>
+                    <button class="btn btn-filter" data-filter="temple">
+                        <i class="fas fa-place-of-worship me-2"></i>Temple
+                    </button>
+                    <button class="btn btn-filter" data-filter="nature">
+                        <i class="fas fa-leaf me-2"></i>Nature
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Destinations -->
+        <section class="destinations-section py-5" id="destinations">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-subtitle">Explore</span>
+                    <h2 class="section-title">Popular Destinations</h2>
+                    <p class="section-description">Discover the most visited and loved destinations across India</p>
+                </div>
+                <div class="row g-4" id="destinationCards">
+                    <!-- Taj Mahal -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="historical" data-name="Taj Mahal">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photos/5458388/pexels-photo-5458388.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Taj Mahal" class="card-img-top">
+                                <div class="card-badge">Historical</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=taj-mahal" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Agra, Uttar Pradesh</span>
+                                </div>
+                                <h5 class="card-title">Taj Mahal</h5>
+                                <p class="card-text">An ivory-white marble mausoleum, a symbol of eternal love and UNESCO World Heritage Site.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-count">(4.8)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;2,999</span>
+                                    </div>
+                                    <a href="booking.html?destination=taj-mahal" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Golden Temple -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="temple" data-name="Golden Temple">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Golden Temple" class="card-img-top">
+                                <div class="card-badge badge-temple">Temple</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=golden-temple" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Amritsar, Punjab</span>
+                                </div>
+                                <h5 class="card-title">Golden Temple</h5>
+                                <p class="card-text">The holiest Gurdwara and the most spiritually significant site of Sikhism.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-count">(5.0)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;1,999</span>
+                                    </div>
+                                    <a href="booking.html?destination=golden-temple" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mysore Palace -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="historical" data-name="Mysore Palace">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photo-3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mysore Palace" class="card-img-top">
+                                <div class="card-badge">Historical</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=mysore-palace" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Mysore, Karnataka</span>
+                                </div>
+                                <h5 class="card-title">Mysore Palace</h5>
+                                <p class="card-text">A historical palace and royal residence featuring Indo-Saracenic architecture.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="rating-count">(4.5)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;2,499</span>
+                                    </div>
+                                    <a href="booking.html?destination=mysore-palace" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Varanasi -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="temple" data-name="Varanasi">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photos/5458388/pexels-photo-5458388.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Varanasi Ghats" class="card-img-top">
+                                <div class="card-badge badge-temple">Temple</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=varanasi" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Varanasi, Uttar Pradesh</span>
+                                </div>
+                                <h5 class="card-title">Varanasi</h5>
+                                <p class="card-text">One of the oldest living cities, famous for its ghats and spiritual significance.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-count">(4.7)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;1,799</span>
+                                    </div>
+                                    <a href="booking.html?destination=varanasi" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ooty -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="hill-station" data-name="Ooty">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photos/2409091/pexels-photo-2409091.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ooty Hill Station" class="card-img-top">
+                                <div class="card-badge badge-hill">Hill Station</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=ooty" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Ooty, Tamil Nadu</span>
+                                </div>
+                                <h5 class="card-title">Ooty</h5>
+                                <p class="card-text">Queen of hill stations, known for tea gardens, botanical gardens, and scenic beauty.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="rating-count">(4.4)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;3,499</span>
+                                    </div>
+                                    <a href="booking.html?destination=ooty" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kodaikanal -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="hill-station" data-name="Kodaikanal">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photos/2161467/pexels-photo-2161467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kodaikanal" class="card-img-top">
+                                <div class="card-badge badge-hill">Hill Station</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=kodaikanal" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Kodaikanal, Tamil Nadu</span>
+                                </div>
+                                <h5 class="card-title">Kodaikanal</h5>
+                                <p class="card-text">The Princess of Hill Stations, famous for its star-shaped lake and waterfalls.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="rating-count">(4.3)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;3,299</span>
+                                    </div>
+                                    <a href="booking.html?destination=kodaikanal" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Goa -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="beach" data-name="Goa">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photos/1007427/pexels-photo-1007427.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Goa Beach" class="card-img-top">
+                                <div class="card-badge badge-beach">Beach</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=goa" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Goa</span>
+                                </div>
+                                <h5 class="card-title">Goa</h5>
+                                <p class="card-text">India's beach paradise with pristine beaches, vibrant nightlife, and Portuguese heritage.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-count">(4.6)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;4,999</span>
+                                    </div>
+                                    <a href="booking.html?destination=goa" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kerala Backwaters -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="nature" data-name="Kerala Backwaters">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kerala Backwaters" class="card-img-top">
+                                <div class="card-badge badge-nature">Nature</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=kerala-backwaters" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Alleppey, Kerala</span>
+                                </div>
+                                <h5 class="card-title">Kerala Backwaters</h5>
+                                <p class="card-text">A network of serene canals, lagoons, and lakes offering houseboat experiences.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-count">(4.9)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;5,999</span>
+                                    </div>
+                                    <a href="booking.html?destination=kerala-backwaters" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hampi -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="historical" data-name="Hampi">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hampi Ruins" class="card-img-top">
+                                <div class="card-badge">Historical</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=hampi" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Hampi, Karnataka</span>
+                                </div>
+                                <h5 class="card-title">Hampi</h5>
+                                <p class="card-text">UNESCO World Heritage Site with ancient Vijayanagara Empire ruins and boulder landscapes.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="rating-count">(4.5)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;2,199</span>
+                                    </div>
+                                    <a href="booking.html?destination=hampi" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jaipur -->
+                    <div class="col-lg-4 col-md-6 destination-item" data-category="historical" data-name="Jaipur">
+                        <div class="destination-card">
+                            <div class="card-image-wrapper">
+                                <img src="https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Jaipur Pink City" class="card-img-top">
+                                <div class="card-badge">Historical</div>
+                                <div class="card-overlay">
+                                    <a href="place-details.html?id=jaipur" class="btn btn-light btn-sm">View Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Jaipur, Rajasthan</span>
+                                </div>
+                                <h5 class="card-title">Jaipur</h5>
+                                <p class="card-text">The Pink City, known for magnificent forts, palaces, and vibrant Rajasthani culture.</p>
+                                <div class="card-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="rating-count">(4.7)</span>
+                                </div>
+                                <div class="card-footer-custom">
+                                    <div class="price">
+                                        <span class="price-label">Starting from</span>
+                                        <span class="price-value">&#8377;3,799</span>
+                                    </div>
+                                    <a href="booking.html?destination=jaipur" class="btn btn-primary btn-sm">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="features-section py-5 bg-light">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-subtitle">Why Us</span>
+                    <h2 class="section-title">Why Choose Explore India</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5>Safe Travels</h5>
+                            <p>Verified destinations with safety protocols</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h5>Best Prices</h5>
+                            <p>Competitive pricing with no hidden charges</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h5>24/7 Support</h5>
+                            <p>Round-the-clock customer assistance</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5>Handpicked Hotels</h5>
+                            <p>Curated accommodations for comfort</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="newsletter-title">Subscribe to Our Newsletter</h3>
+                        <p class="newsletter-text">Get travel tips, exclusive offers, and destination guides delivered to your inbox.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <i class="fas fa-compass"></i>
+                            <span>Explore India</span>
+                        </a>
+                        <p class="footer-description">Your trusted partner for discovering incredible destinations across India. We make travel dreams come true.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="places.html">Destinations</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Popular Destinations</h5>
+                    <ul class="footer-links">
+                        <li><a href="place-details.html?id=taj-mahal">Taj Mahal</a></li>
+                        <li><a href="place-details.html?id=goa">Goa</a></li>
+                        <li><a href="place-details.html?id=kerala-backwaters">Kerala Backwaters</a></li>
+                        <li><a href="place-details.html?id=golden-temple">Golden Temple</a></li>
+                        <li><a href="place-details.html?id=jaipur">Jaipur</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tourism Street, New Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@exploreindia.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Explore India. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
