@@ -2,7 +2,10 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
+  base: '/Tourism-Management-Website/',
+
   root: '.',
+
   build: {
     rollupOptions: {
       input: {
@@ -17,5 +20,6 @@ export default defineConfig({
     },
     outDir: 'dist',
   },
+
   publicDir: 'public',
 })
