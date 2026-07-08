@@ -18,6 +18,7 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
       },
     },
+
     outDir: 'dist',
   },
 

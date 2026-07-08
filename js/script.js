@@ -131,11 +131,11 @@ const destinations = {
         rating: 4.4,
         price: 3499,
         description: 'Queen of hill stations, known for tea gardens, botanical gardens, and scenic beauty.',
-        heroImage: 'https://images.pexels.com/photos/2409091/pexels-photo-2409091.jpeg?auto=compress&cs=tinysrgb&w=1920',
+        heroImage: 'https://images.pexels.com/photos/38287891/pexels-photo-38287891.jpeg?auto=compress&cs=tinysrgb&w=1920',
         images: [
-            'https://images.pexels.com/photos/2409091/pexels-photo-2409091.jpeg?auto=compress&cs=tinysrgb&w=600',
-            'https://images.pexels.com/photos/2161467/pexels-photo-2161467.jpeg?auto=compress&cs=tinysrgb&w=600',
-            'https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg?auto=compress&cs=tinysrgb&w=600'
+            'https://images.pexels.com/photos/38287891/pexels-photo-38287891.jpeg?auto=compress&cs=tinysrgb&w=600',
+            'https://images.pexels.com/photos/35151700/pexels-photo-35151700.jpeg?auto=compress&cs=tinysrgb&w=600',
+            'https://images.pexels.com/photos/35166958/pexels-photo-35166958.jpeg?auto=compress&cs=tinysrgb&w=600'
         ],
         history: 'Ooty, officially known as Udhagamandalam, is a town and a municipality in the Nilgiri district of Tamil Nadu. It served as the summer headquarters of the Madras government during British rule and is famously called the Queen of Hill Stations.',
         bestTime: 'April to June, September to November',
